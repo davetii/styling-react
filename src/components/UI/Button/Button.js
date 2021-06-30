@@ -1,5 +1,9 @@
-import styled from 'styled-components';
+//import styled from 'styled-components';
+import React from "react";
 
+import styles from './Button.module.css';
+
+/*
 const Button = styled.button`
   
     font: inherit;
@@ -25,13 +29,15 @@ const Button = styled.button`
 
 `;
 
-/*
+ */
+
+
 const Button = props => {
   return (
-    <button type={props.type} className="button" onClick={props.onClick}>
+    <button type={props.type} className={styles.button} onClick={props.onClick}>
       {props.children}
     </button>
   );
 };
-*/
+
 export default Button;
